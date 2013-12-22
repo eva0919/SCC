@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Small Circle Circle</title>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+		$(document).ready(function() {
+			var pathname = $(location).attr('href');
+			var s = pathname.split("?");
+			s = s[1].split("=");
+			setTimeout(function () { window.location = "https://itunes.apple.com/"; }, 25);
+			// console.log(pathname);
+			// console.log(s[1]);
+			window.location = s[1];
+		});
+		
+</script>
+</html>
